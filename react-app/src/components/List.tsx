@@ -25,5 +25,4 @@ function List({ data, onSelect }: Props) {
     </ul>
   );
 }
-
 export default List;

@@ -6,7 +6,11 @@ function App() {
   const handleSelect = (elemento: string) => {
     console.log("imprimiendo", elemento);
   };
-
+  const contenido = list.length ? (
+    <List data={list} oneSelect={handleSelect} />
+  ) : (
+    "Sin elementos para mostrar"
+  );
   return (
     <Card>
       <Cardbody title="Holi" text="Esto va bien creo" />
